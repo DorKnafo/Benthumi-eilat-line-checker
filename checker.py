@@ -12,7 +12,7 @@ while True:
         line = int(str(h3.contents[0]).strip())
         if line > lastline:
             if os.name == 'posix':
-                os.system('say -v "Good news" You are next in line')
+                os.system('say -v "Good news" ' + str(line))
             else:
                 print('\a') #beep
             print "%s line: %d"%(time.strftime("%H:%M"),line)
